@@ -278,7 +278,7 @@ export class View extends ViewCommon {
                 
                 if (view instanceof Frame) {
                     // when interacting with nested fragments instead of using getSupportFragmentManager 
-                    // we must always use getChildFragmentManager instead
+                    // we must always use getChildFragmentManager
                     const parentFrame: Frame = <Frame>getAncestor(view, Frame);
                     if (parentFrame) {
                         const backstackEntry = parentFrame._currentEntry || parentFrame._executingEntry;
